@@ -1,0 +1,10 @@
+{
+    "name": "moodle-availability_weekday-form",
+    "builds": {
+      "moodle-availability_weekday-form": {
+        "jsfiles": [
+          "form.js"
+        ]
+      }
+    }
+  }
