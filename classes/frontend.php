@@ -40,11 +40,11 @@ class frontend extends \core_availability\frontend {
      * Delivers parameters to the javascript part of the plugin
      *
      * @param  \stdClass $course Course object
-     * @param  \cm_info $cm Course-module currently being edited (null if none)
-     * @param  \section_info $section Section currently being edited (null if none)
+     * @param  ?\cm_info $cm Course-module currently being edited (null if none)
+     * @param  ?\section_info $section Section currently being edited (null if none)
      * @return array Array of parameters for the JavaScript function
      */
-    protected function get_javascript_init_params($course, \cm_info $cm = null, \section_info $section = null) {
+    protected function get_javascript_init_params($course, ?\cm_info $cm = null, ?\section_info $section = null) {
         global $OUTPUT;
         $calendar = \core_calendar\type_factory::get_calendar_instance();
         $weekdays = $calendar->get_weekdays();
